@@ -11,7 +11,7 @@ import { Animal } from './animal.model';
         <img class='kylie' src="resources/img/kylie.png" alt="">
         <img class='athlete' src="resources/img/athlete.png" alt="">
       </div>
-      <h2>{{currentAnimalList}}</h2>
+      <h2 class='currently-residing'>{{currentAnimalList}}</h2>
       <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
       <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
       <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
@@ -23,7 +23,7 @@ import { Animal } from './animal.model';
 
 
 export class AppComponent {
-  currentAnimalList: string = 'Animals currently residing here:';
+  currentAnimalList: string = 'Current residents:';
   //component class is what this is declares how component BEHAVES
   selectedAnimal = null;
 

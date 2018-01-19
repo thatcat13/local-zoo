@@ -17,10 +17,12 @@ body {
 
 .fantastic-zoo {
   font-size: 5em;
+  text-shadow: 4px 4px #482e2f;
 }
 .img-div {
   height: 300px;
   position: relative;
+  text-align: center;
 }
 
 .kylie, .athlete {
@@ -28,13 +30,20 @@ body {
   position: absolute;
 }
 
-.kylie {
-  top: 50px;
-  left: 20px;
+.athlete {
+  top: -129px;
+  left: 273px;
+  z-index: -1;
 }
 
-.img-div {
-  text-align: center;
+.kylie {
+  top: -109px;
+  left: 3px;
+  z-index: -1;
+}
+
+.currently-residing {
+  text-shadow: 4px 4px #482e2f;
 }
 
 .filter-container {
@@ -42,11 +51,25 @@ body {
   justify-content: center;
 }
 
+.filter-select {
+  background: #c75e13;
+  border: none;
+  margin: 30px;
+  font-size: 1.5em;
+  color: #5f090c;
+}
+
 .list-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   border: 1px solid #fad605;
+}
+
+.update-btn {
+  background: #c75e13;
+  border: none;
+  color: #5f090c;
 }
 
 .add-container {

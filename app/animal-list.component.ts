@@ -6,13 +6,13 @@ import { Animal } from './animal.model';
   selector: 'animal-list',
   template: `
   <div class='filter-container'>
-  <select (change)="onChange($event.target.value)">
+  <select class='filter-select'(change)="onChange($event.target.value)">
   <option value="allAnimals">All Fantastic Animals</option>
   <option value="young">The Younger Fantastic Animals</option>
   </select>
   </div>
   <div class='list-container' *ngFor='let currentAnimal of childAnimalList | animalAge:filterByAnimalAge'>
-    <h5>Species: {{currentAnimal.latinName}}<button (click)="editButtonHasBeenClicked(currentAnimal)">Update Animal</button></h5>
+    <h5>Species: {{currentAnimal.latinName}}<button class='update-btn '(click)="editButtonHasBeenClicked(currentAnimal)">Update Animal</button></h5>
     <h5>Name: {{currentAnimal.name}}</h5>
     <h5>Age: {{currentAnimal.age}}</h5>
     <h5>Diet: {{currentAnimal.diet}}</h5>
