@@ -28,7 +28,7 @@ export class AppComponent {
   selectedAnimal = null;
 
   masterAnimalList: Animal[] = [
-  new Animal('Lutra Lutra', 'European Otter', 'Linda Otter', 1, 'pescetarian', 'Lawyer Office Zone', 2, 'F', 'fish, typing fast', 'loud noises'),
+  new Animal('Lutra Lutra', 'European Otter', 'Linda Otter', 1, 'omnivore', 'Lawyer Office Zone', 2, 'F', 'fish, typing fast', 'loud noises'),
 
   new Animal('Talpa Europa', 'European Mole', 'Mole', 1, 'carnivore', 'Underground Zone', 2, 'M', 'earthworms', 'bright light'),
 
