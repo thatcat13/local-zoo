@@ -8,7 +8,8 @@ import { Animal } from './animal.model';
 
 
 export class AgePipe implements PipeTransform {
-  transform(input: Animal[], currentAnimalAge) {
+
+  transform(input:Animal[], currentAnimalAge) {
     var output: Animal[] = [];
       if (currentAnimalAge === 'allAnimals') {
         for (var i = 0; i < input.length; i++) {
