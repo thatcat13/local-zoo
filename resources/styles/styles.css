@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  align-items: center;
+  background: lightgrey;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
