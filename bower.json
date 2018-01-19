@@ -10,5 +10,12 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "authors": [
+    "cj <thatcat13@gmail.com>"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.0"
+  }
 }

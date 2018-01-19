@@ -5,13 +5,19 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'app-root',
   template: `
-  <div class='heading-container'>
-    <h1>Fantastic Zoo</h1>
-    <h2>{{currentAnimalList}}</h2>
-    <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
-    <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
-    <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
-  </div><!--container-->
+    <div class='heading-container'>
+      <div class='img-div'>
+        <h1 class='fantastic-zoo'>Fantastic Zoo</h1>
+        <img class='kylie' src="resources/img/kylie.png" alt="">
+        <img class='athlete' src="resources/img/athlete.png" alt="">
+      </div>
+      <h2>{{currentAnimalList}}</h2>
+      <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
+      <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+      <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
+    </div><!--container-->
+    <div>
+    </div>
   `
 })
 

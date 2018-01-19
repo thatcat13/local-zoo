@@ -1,16 +1,58 @@
 body {
+  background-color: #9b0812;
   display: flex;
   flex-direction: column;
-  font-family: monospace;
+  font-family: Arial Black, sans-serif;
+  color: #fad605;
+  font-weight: bolder;
   align-items: center;
-  background: lightgrey;
+  position: relative;
 }
 
-
-
-.container {
+.heading-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+}
+
+.fantastic-zoo {
+  font-size: 5em;
+}
+.img-div {
+  height: 300px;
+  position: relative;
+}
+
+.kylie, .athlete {
+  transform: scale(0.6);
+  position: absolute;
+}
+
+.kylie {
+  top: 50px;
+  left: 20px;
+}
+
+.img-div {
+  text-align: center;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #fad605;
+}
+
+.add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #5f090c;
+  width: 100vw;
 }

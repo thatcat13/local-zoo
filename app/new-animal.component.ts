@@ -6,7 +6,7 @@ import { Animal } from './animal.model';
   selector: 'new-animal',
   template: `
   <div class="add-container">
-    <h1>Add New Fantastic Animal</h1>
+    <h1>Add A New Fantastic Animal</h1>
     <div>
       <div>
         <label>Enter Latin Name:</label>
