@@ -46,7 +46,7 @@ import { Animal } from './animal.model';
       </div>
     </div><!--input-->
     <div>
-     <button (click)="submitForm(newLatinName.value, newCommonName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value)">Add</button>
+     <button class='add-btn' (click)="submitForm(newLatinName.value, newCommonName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value)">Add</button>
     </div>
   </div><!--container-->
   `

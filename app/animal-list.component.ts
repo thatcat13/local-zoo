@@ -12,7 +12,7 @@ import { Animal } from './animal.model';
   </select>
   </div>
   <div class='list-container' *ngFor='let currentAnimal of childAnimalList | animalAge:filterByAnimalAge'>
-    <h5>Species: {{currentAnimal.latinName}}<button class='update-btn '(click)="editButtonHasBeenClicked(currentAnimal)">Update Animal</button></h5>
+    <h5>Species: {{currentAnimal.latinName}}</h5>
     <h5>Name: {{currentAnimal.name}}</h5>
     <h5>Age: {{currentAnimal.age}}</h5>
     <h5>Diet: {{currentAnimal.diet}}</h5>
@@ -21,6 +21,7 @@ import { Animal } from './animal.model';
     <h5>Sex: {{currentAnimal.sex}}</h5>
     <h5>Likes: {{currentAnimal.likes}}</h5>
     <h5>Dislikes: {{currentAnimal.dislikes}}</h5>
+    <button class='update-btn'(click)="editButtonHasBeenClicked(currentAnimal)">Update Animal</button>
   </div>
   `
 })

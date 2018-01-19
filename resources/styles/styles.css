@@ -63,13 +63,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 1px solid #fad605;
+  border: 1px solid rgba(250, 214, 5, 0.5);
+  border-radius: 4px;
+  text-shadow: 2px 2px #482e2f;
+  padding: 20px;
+  width: auto;
 }
 
 .update-btn {
   background: #c75e13;
   border: none;
   color: #5f090c;
+  border-radius: 10px;
+  height: 50px;
+  font-size: 1.25em;
 }
 
 .add-container {
@@ -78,4 +85,21 @@ body {
   align-items: center;
   background: #5f090c;
   width: 100vw;
+  margin: 20px;
+  text-shadow: 2px 2px #482e2f;
+}
+
+.add-container label {
+  font-size: 1.25em;
+}
+
+.add-btn {
+  background: #c75e13;
+  border: none;
+  color: #5f090c;
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+  margin: 20px;
+  font-size: 2em;
 }
