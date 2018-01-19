@@ -5,13 +5,13 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'app-root',
   template: `
-  <div class="container">
+  <div class='heading-container'>
     <h1>Fantastic Zoo</h1>
-    <h3>{{currentAnimalList}}</h3>
+    <h2>{{currentAnimalList}}</h2>
     <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
     <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
     <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
-  </div>
+  </div><!--container-->
   `
 })
 
@@ -22,9 +22,9 @@ export class AppComponent {
   selectedAnimal = null;
 
   masterAnimalList: Animal[] = [
-  new Animal('Lutra Lutra', 'European Otter', 'Linda Otter', 3, 'pescetarian', 'Lawyer Office Zone', 2, 'F', 'fish, typing fast', 'loud noises'),
+  new Animal('Lutra Lutra', 'European Otter', 'Linda Otter', 1, 'pescetarian', 'Lawyer Office Zone', 2, 'F', 'fish, typing fast', 'loud noises'),
 
-  new Animal('Talpa Europa', 'European Mole', 'Mole', 2, 'carnivore', 'Underground Zone', 2, 'M', 'earthworms', 'bright light'),
+  new Animal('Talpa Europa', 'European Mole', 'Mole', 1, 'carnivore', 'Underground Zone', 2, 'M', 'earthworms', 'bright light'),
 
   new Animal('Oryctolagus Cuniculus', 'European Rabbit', 'Rabbit', 7, 'herbivore', 'Kitchen Zone', 2, 'M', 'cooking', 'cooks who are slow '),
 
