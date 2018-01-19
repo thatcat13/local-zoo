@@ -10,6 +10,7 @@ import { Animal } from './animal.model';
     <h3>{{currentAnimalList}}</h3>
     <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
     <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+    <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
   </div>
   `
 })
@@ -35,12 +36,16 @@ export class AppComponent {
 
 ];
 
-editAnimal(clickedAnimal) {
-  this.selectedAnimal = clickedAnimal;
-}
+  editAnimal(clickedAnimal) {
+    this.selectedAnimal = clickedAnimal;
+  }
 
-finishedEditing() {
-  this.selectedAnimal = null;
+  finishedEditing() {
+    this.selectedAnimal = null;
+  }
+
+  addAnimal(newAnimalFromChild: Animal) {
+    this.masterAnimalList.push(newAnimalFromChild);
 }
 
 
