@@ -9,9 +9,9 @@ import { Animal } from './animal.model';
   <select class='filter-select' (change)="onChange($event.target.value)">
   <option value="allAnimals">All Fantastic Animals</option>
   <option value="young">The Younger Fantastic Animals</option>
-  <!--<option value="herbivore">The Fantastic Herbivores</option>
+  <option value="herbivore">The Fantastic Herbivores</option>
   <option value="omnivore">The Fantastic Omnivores</option>
-  <option value="carnivore">The Fantastic Carnivores</option>-->
+  <option value="carnivore">The Fantastic Carnivores</option>
   </select>
   </div>
   <div *ngFor='let currentAnimal of childAnimalList | animalAge:filterByAnimalAge' class='list-container'>
@@ -36,11 +36,11 @@ export class AnimalListComponent {
 
   filterByAnimalAge: string = "allAnimals";
 
-  // filterByAnimalDiet: string = "allAnimals";
+  filterByAnimalDiet: string = "allAnimals";
 
   onChange(optionFromMenu){
     this.filterByAnimalAge = optionFromMenu;
-    // this.filterByAnimalDiet = optionFromMenu;
+    this.filterByAnimalDiet = optionFromMenu;
   }
 
   editButtonHasBeenClicked(animalToEdit: Animal) {
