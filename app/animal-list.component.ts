@@ -6,7 +6,7 @@ import { Animal } from './animal.model';
   selector: 'animal-list',
   template: `
   <div class='filter-container'>
-  <select class='filter-select'(change)="onChange($event.target.value)">
+  <select class='filter-select' (change)="onChange($event.target.value)">
   <option value="allAnimals">All Fantastic Animals</option>
   <option value="young">The Younger Fantastic Animals</option>
   <!--<option value="herbivore">The Fantastic Herbivores</option>
@@ -14,9 +14,10 @@ import { Animal } from './animal.model';
   <option value="carnivore">The Fantastic Carnivores</option>-->
   </select>
   </div>
-  <div class='list-container' *ngFor='let currentAnimal of childAnimalList | animalAge:filterByAnimalAge'>
-    <h5>Species: {{currentAnimal.latinName}}</h5>
-    <h5>Name: {{currentAnimal.name}}</h5>
+  <div *ngFor='let currentAnimal of childAnimalList | animalAge:filterByAnimalAge' class='list-container'>
+    <h5>Latin Name: {{currentAnimal.latinName}}</h5>
+    <h5>Common Name: {{currentAnimal.commonName}}</h5>
+    <h5>Animal Name: {{currentAnimal.name}}</h5>
     <h5>Age: {{currentAnimal.age}}</h5>
     <h5>Diet: {{currentAnimal.diet}}</h5>
     <h5>Location: {{currentAnimal.location}}</h5>
@@ -24,7 +25,7 @@ import { Animal } from './animal.model';
     <h5>Sex: {{currentAnimal.sex}}</h5>
     <h5>Likes: {{currentAnimal.likes}}</h5>
     <h5>Dislikes: {{currentAnimal.dislikes}}</h5>
-    <button class='update-btn'(click)="editButtonHasBeenClicked(currentAnimal)">Update Animal</button>
+    <button class='update-btn' (click)="editButtonHasBeenClicked(currentAnimal)">Update Animal</button>
   </div>
   `
 })
