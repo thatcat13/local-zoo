@@ -1,8 +1,8 @@
 # Local Zoo Tracking App
 
-##JavaScript Week3 Solo Project: creation of an app to track animals at the local Zoo; app will allow user to add new animals, edit existing animals and allow filtering of animals displayed in the main list based on age.
+## JavaScript Week3 Solo Project: creation of an app to track animals at the local Zoo; app will allow user to add new animals, edit existing animals and allow filtering of animals displayed in the main list based on age.
 
-####January 19, 2018
+#### January 19, 2018
 
 ### Cat Janowitz
 
@@ -16,8 +16,8 @@ This project is build using the Angular2 open-source platform. The app will be b
 
 Additionally, a pipe will be added to filter display of animals by age:
 * All animals
-* Animals age 2+ years (young)
-* Animals over 2 years (mature)
+* Animals aged less than 2 years (young)
+* Animals over 2 years (all)
 
 
 ## Setup/Installation Requirements
