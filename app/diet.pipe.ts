@@ -10,7 +10,12 @@ import { Animal } from './animal.model';
 export class DietPipe implements PipeTransform {
   transform(input: Animal[], currentAnimalDiet) {
     var output: Animal[] = [];
-      if (currentAnimalDiet === 'herbivore') {
+    if (currentAnimalDiet === 'allAnimals') {
+      for (var i = 0; i < input.length; i++) {
+        output.push(input[i]);
+      }
+    return output;
+  }  else if (currentAnimalDiet === 'herbivore') {
         for (var i = 0; i < input.length; i++) {
           if (input[i].diet === 'herbivore') {
           output.push(input[i]);
