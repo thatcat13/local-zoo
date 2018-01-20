@@ -14,7 +14,7 @@ import { Animal } from './animal.model';
   <option value="carnivore">The Fantastic Carnivores</option>
   </select>
   </div>
-  <div *ngFor='let currentAnimal of childAnimalList | animalAge:filterByAnimalAge' class='list-container'>
+  <div *ngFor='let currentAnimal of childAnimalList | animalAge:filterByAnimalAge | animalDiet:filterByAnimalDiet' class='list-container'>
     <h5>Latin Name: {{currentAnimal.latinName}}</h5>
     <h5>Common Name: {{currentAnimal.commonName}}</h5>
     <h5>Animal Name: {{currentAnimal.name}}</h5>
